@@ -25,7 +25,7 @@ def sum_profit(text: str, generator_func: Callable):
 
     # If there are no numbers, return 0
     if not number_list:
-        return 0
+        raise ValueError("No numbers found for calculation.")
 
     # Return the sum of all numbers
     return sum(number_list)
